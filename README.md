@@ -16,3 +16,13 @@ Conducted emission is often the test to begin with, before measuring radiated em
 LISNs are commercially available and a renowned manufacturer is Tekbox. While these LISNs have an exceptional build quality, they also come with their price tag, and with some moderate effort they can be homebrew and brought within the specifications of the measurment standard.
 
 The compromise made in this implementation shall be the use of simple coils, in contrast to the coils of the commercial units, that have 3 intermediate taps connected to resistors, to dampen the self-resonance of the coil. While this commercial implementation is a good approach to obtain a very flat 50 Ohm impedance over a wide range, it is not strictly necessary to keep the impedance within the wide (~ 20 %) boundaries of the CISPR16 standard. Finally, since the spectra of the interference caused by the EUT typically extend over some 10s of dB µV, a 15 % deviation from a perfectly flat LISN impedance would not have a noticeable effect on this final result. Therefore we shall adopt a simpler LISN architecture by still using single layer coils for the artificial network, but without the intermediate taps.
+
+![informative_schematics_sm](https://github.com/user-attachments/assets/5ca811f7-7cb7-415b-bc85-efa82a105afc)
+
+The replacement circuit is this (courtesy EEVblog). At the output it is a bit wrong since the spectrum analyzer, itself being a 50 Ohm load, is connected to one branch and the other has to be terminated by an internal 50 ohm resistor.
+
+![kicad_circuit_sm](https://github.com/user-attachments/assets/2f514313-fe99-48f6-8004-219796ece34a)
+
+I have now made the circuit diagram on KiCAD and started assigning footprints. The 50 Ohm problem is not visible on my circuit but will be adressed by the DPDT switch that does the job when connected correspondingly. The big coils are not onboard but connected by clamp terminals. The higher parts count stems from making 8 uF and 5 Ohm resistors by parallel circuit of 2 x 4 uF and 2 x 10 Ohm respectively, adding varistors as overvoltage protection, 2 capacitors in parallel for the outcoupling capacitor because of parasitics, the parts for the artificial hand and the option of having the PE float on 50 uH.
+
+
