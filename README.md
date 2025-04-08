@@ -25,4 +25,7 @@ The replacement circuit is this (courtesy EEVblog). At the output it is a bit wr
 
 I have now made the circuit diagram on KiCAD and started assigning footprints. The 50 Ohm problem is not visible on my circuit but will be adressed by the DPDT switch that does the job when connected correspondingly. The big coils are not onboard but connected by clamp terminals. The higher parts count stems from making 8 uF and 5 Ohm resistors by parallel circuit of 2 x 4 uF and 2 x 10 Ohm respectively, adding varistors as overvoltage protection, 2 capacitors in parallel for the outcoupling capacitor because of parasitics, the parts for the artificial hand and the option of having the PE float on 50 uH.
 
+![tekbox_front_sm](https://github.com/user-attachments/assets/928bf441-2746-43fe-946f-5e7c84e7800e)
+
+The original from which my DIY project is inspired is the image above. Note the switch allowing to let the PE float. What i do not implement is the internal attenuator. Mine will be used permanently with an external one, even 20 dB or more.
 
