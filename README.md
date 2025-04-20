@@ -24,13 +24,13 @@ The replacement circuit is this (courtesy EEVblog). At the output it is a bit wr
 
 ![kicad_circuit_sm](https://github.com/user-attachments/assets/2f514313-fe99-48f6-8004-219796ece34a)
 
-Above is shown the circuit diagram on KiCAD. The 50 Ohm problem is not visible on my circuit but will be adressed by the DPDT switch that does the job when connected correspondingly. It assumes the task of connecting one output to the upper RF output, and to terminate the other via 50 Ohm. If the DPDT rocker switch is in the middle zero position, neither output is connected to the upper RF output nor terminated, and it is the users task to use and/or terminate the signals on the lower RF ouputs. This allows performing arithmetics to distinguish common and differential mode.
+Above is shown the circuit diagram on KiCAD. The upper 3-pin connector has two ground pins and one pin for the artificial hand. The lower 3-pin connector has the outputs of the two branches and 50 Ohm in the middle.  The termination problem will be adressed by the DPDT switch that does the job when connected correspondingly. It assumes the task of connecting one output to the upper RF output, and to terminate the other to the 50 Ohm pin. If the DPDT rocker switch is in the middle zero position, neither output is connected to the upper RF output nor terminated, and it is the user's task to use and/or terminate the signals on the lower RF ouputs. This allows performing arithmetics to distinguish common and differential mode.
 
 ![P4201879](https://github.com/user-attachments/assets/dd4885bc-3fc7-4dee-af39-0a8d74f6c2ff) ![P4201878](https://github.com/user-attachments/assets/cfb5b6eb-7c66-4b39-ae2c-7089bd6f81c3)
 
 Above is the cabling of the rocker switch and the 3 RF N-type output connectors.
 
-The big coils are not onboard but connected by clamp terminals. The higher parts count stems from making 8 uF and 5 Ohm resistors by parallel circuit of 2 x 4 uF and 2 x 10 Ohm respectively, adding varistors as overvoltage protection, 2 capacitors in parallel for the outcoupling capacitor because of parasitics, the parts for the artificial hand and the option of having the PE float on 50 uH.
+The big coils are not onboard but connected by clamp terminals. The higher parts count stems from making 8 uF and 5 Ohm resistors by parallel circuits of 2 x 4 uF and 2 x 10 Ohm respectively, adding varistors as overvoltage protection, 2 capacitors in parallel for the outcoupling capacitor because of parasitics, the parts for the artificial hand and the option of having the PE float on 50 uH.
 
 ![P4201871](https://github.com/user-attachments/assets/bcdcc090-6d13-4264-927b-2b508ce3e617)  ![P4201870](https://github.com/user-attachments/assets/cdb38440-55e5-4799-bd56-ce7b6ac3c377)
 
@@ -42,7 +42,7 @@ The effect is stronger for the vertically mounted 220 uH line filter coils. They
 
 ![tekbox_front_sm](https://github.com/user-attachments/assets/928bf441-2746-43fe-946f-5e7c84e7800e)
 
-The original from which my DIY project is inspired is the image above. Note the switch allowing to let the PE float. What i do not implement is the internal attenuator. Mine will be used permanently with an external one, even 20 dB or more.
+The original from which my DIY project is inspired is on the image above. Note the switch allowing to let the PE float. What i do not implement is the internal attenuator. Mine will be used permanently with an external one, even 20 dB or more.
 
 In the end we perform the calibration of the LISN as a whole. We perform the measurements as given in the Tekbox manual :
 
@@ -62,7 +62,7 @@ A final remark about the capacitors :
 
 ![P4201887](https://github.com/user-attachments/assets/9d48455a-4d09-406e-9be9-14737cf1c724) ![P4201884](https://github.com/user-attachments/assets/e4a14d56-5171-4c1f-8543-a0225ffd19ab)
 
-Their terminals are placed somewhat randomly at their bottom and a custom footprint with two pads on each side had been made to place them as straight as possible on the board but this was not exactly possible and therefore 2 capacitors are slightly rotated on the prototype. The capacitors are motor capacitors, polyproylene film, type CBB61. If the LISN is operated via a safety isolation transformer, the mains voltage shall divide onto the two branches, dividing the voltage by 2, and leave a large safety margin in case the indicated rating is not for permanent use.
+Their terminals are located somewhat randomly and a custom footprint with two pads on each side had been made to place them as straight as possible on the board but this was not exactly possible and therefore 2 capacitors are slightly rotated on the prototype. The capacitors are motor capacitors, polyproylene film, type CBB61. If the LISN is operated via a safety isolation transformer, the mains voltage shall be divided onto the two branches, dividing the voltage by 2, and leave a large safety margin in case the indicated rating is not for permanent use.
 
 
 
