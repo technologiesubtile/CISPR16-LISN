@@ -24,7 +24,7 @@ The replacement circuit is this (courtesy EEVblog). At the output it is a bit wr
 
 ![kicad_circuit_sm](https://github.com/user-attachments/assets/2f514313-fe99-48f6-8004-219796ece34a)
 
-ABove is shown the circuit diagram on KiCAD. The 50 Ohm problem is not visible on my circuit but will be adressed by the DPDT switch that does the job when connected correspondingly. It assumes the task of connecting one output to the RF output, and to terminate the other via 50 Ohm. If the DPDT rocker switch is in the middle zero position, neither output is connected to the upper RF output nor terminated, and it is the users task to use and/or terminate the signals on the lower RF ouputs. This allows performing arithmetics to distinguish common and differential mode.
+Above is shown the circuit diagram on KiCAD. The 50 Ohm problem is not visible on my circuit but will be adressed by the DPDT switch that does the job when connected correspondingly. It assumes the task of connecting one output to the upper RF output, and to terminate the other via 50 Ohm. If the DPDT rocker switch is in the middle zero position, neither output is connected to the upper RF output nor terminated, and it is the users task to use and/or terminate the signals on the lower RF ouputs. This allows performing arithmetics to distinguish common and differential mode.
 
 ![P4201879](https://github.com/user-attachments/assets/dd4885bc-3fc7-4dee-af39-0a8d74f6c2ff) ![P4201878](https://github.com/user-attachments/assets/cfb5b6eb-7c66-4b39-ae2c-7089bd6f81c3)
 
