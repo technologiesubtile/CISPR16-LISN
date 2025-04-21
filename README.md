@@ -4,7 +4,7 @@ A LISN for 230 VAC line powered equipment up to 6A
 ![P4201888](https://github.com/user-attachments/assets/df4e97fd-c0b7-4463-a6cc-72a9f0767e50) ![finishcabled](https://github.com/user-attachments/assets/14c89458-e1be-4569-aa79-b89adeecce67)
 
 
-This device will allow testing the conducted emissions for 230 V and 115 V (or even 100 V, Japan) equipment.
+This device will allow testing the conducted emissions of 230 V and 115 V (or even 100 V, Japan) equipment.
 
 Motivation : Up to 60% of electrical equipment in use in european countries, despite carrying the CE label, does not comply with the regulations, for different reasons, either technical or documentation related (applicability of standards etc.). In some cases, manufacturers eliminate components related to safety and electromagnetic compliance, after the preproduction units have passed the certification, to reduce costs.
 
