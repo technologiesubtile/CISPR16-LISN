@@ -64,7 +64,7 @@ A remark about the capacitors :
 
 ![P4201887](https://github.com/user-attachments/assets/9d48455a-4d09-406e-9be9-14737cf1c724) ![P4201884](https://github.com/user-attachments/assets/e4a14d56-5171-4c1f-8543-a0225ffd19ab)
 
-Their terminals are located somewhat randomly and a custom footprint with two pads on each side had been made to place them as straight as possible on the board but this was not exactly possible and therefore 2 capacitors are slightly rotated on the prototype. The capacitors are motor capacitors, polyproylene film, type CBB61. If the LISN is operated via a safety isolation transformer, the mains voltage shall be divided onto the two branches, dividing the voltage by 2, and leave a large safety margin in case the indicated rating is not for permanent use.
+Their terminals are located somewhat randomly and a custom footprint with two pads on each side had been made to place them as straight as possible on the board but this was not exactly possible and therefore 2 capacitors are slightly rotated on the prototype. The capacitors are motor capacitors, polyproylene film, type CBB61. If the LISN is operated via a safety isolation transformer, the mains voltage shall be distributed onto the two branches, dividing the voltage by 2, and leave a large safety margin in case the indicated rating is not for permanent use.
 
 
 
