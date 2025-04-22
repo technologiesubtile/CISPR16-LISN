@@ -32,7 +32,7 @@ Above is the cabling of the rocker switch and the 3 RF N-type output connectors.
 
 The big coils are not onboard but connected by 4 x 2pin clamp terminals. The higher parts count compared to the simplified replacement circuit stems from making 8 uF and 5 Ohm resistors by parallel circuits of 2 x 4 uF and 2 x 10 Ohm respectively, adding varistors as overvoltage protection, 2 capacitors in parallel for the outcoupling capacitor because of parasitics, the parts for the artificial hand and the option of having the PE float on 50 uH || 50 Ohm.
 
-![P4201871](https://github.com/user-attachments/assets/bcdcc090-6d13-4264-927b-2b508ce3e617)  ![P4201870](https://github.com/user-attachments/assets/cdb38440-55e5-4799-bd56-ce7b6ac3c377)
+![P4201870](https://github.com/user-attachments/assets/cdb38440-55e5-4799-bd56-ce7b6ac3c377)
 
 Above is shown the measurement of the component value of an artificial network coil by the series-through 2-port method. The measurement is performed through two 6dB attenuators. Optionally, we could have made a "test fixture" type of calibration that would take into account the air wires, but this is not done here because the leads are also part of the final intended setup. Note that the inductance of the coils drops a little when they are inside the metal cabinet versus the value in free space because the cabinet behaves as a secondary winding with bad coupling. This effect accounts for a drop from 58 uH to 54 uH. For the moment we leave it as is.
 
