@@ -56,9 +56,11 @@ The left measurement is a shunt-through measurement of the input impedance. The 
 
 Above is shown the experimental implementation of the reference and transmission measurement. We extract two calibration curves, the impedance presented to the EUT, and the insertion loss :
 
-![Impedance](https://github.com/user-attachments/assets/3da23c24-34fb-4312-850c-4e65a70f5a4f) ![Insertion](https://github.com/user-attachments/assets/0ff618d1-5789-438a-a80b-66ce4429b7da)
+![Impedance](https://github.com/user-attachments/assets/9b164492-b37f-4e6a-93c3-44959545da60) ![Insertion](https://github.com/user-attachments/assets/3f69aa7c-b1a4-41d5-92d3-6c78f5fd5b3f)
 
-The result clearly shows a problem between 10 MHz and 30 MHz. The impedance rises to > 100 Ohm and the insertion loss approaches 6 dB. We attribute this to the length of the air wires between the board and the rocker switch, and the effect of their inductance. It would be advantageous to connect the rocker switch to the board with coaxial wires and also to put the terminating resistor for the unused signal directly on the back of the switch instead of re-routing the unused signal back to the board. However, the LISN should be good enough for some precompliance testing. We are not sure whether commercial software such as EMCview would accept the calibration files since they are not within the bounds of the CISPR specification.
+
+
+The result clearly shows a problem between 10 MHz and 30 MHz. The impedance rises to > 100 Ohm and the insertion loss approaches 4 dB. We attribute this to the length of the air wires between the board and the rocker switch, and the effect of their inductance. It would be advantageous to connect the rocker switch to the board with coaxial wires and also to put the terminating resistor for the unused signal directly on the back of the switch instead of re-routing the unused signal back to the board. Also note the negative insertion loss on the plateau. This is probably due to changing the 50 Ohm termination between the transmission and the reference measurement, because it revealed that it did not make contact on the N to SMA adapter. Despite the limitations, the LISN should be good enough for some precompliance testing. We are not sure whether commercial software such as EMCview would accept the calibration files since they are not within the bounds of the CISPR specification.
 
 A remark about the capacitors :
 
