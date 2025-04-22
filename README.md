@@ -56,15 +56,15 @@ The left measurement is a shunt-through measurement of the input impedance. The 
 
 Above is shown the experimental implementation of the reference and transmission measurement. We extract two calibration curves, the impedance presented to the EUT, and the insertion loss :
 
-![Impedance](https://github.com/user-attachments/assets/9b164492-b37f-4e6a-93c3-44959545da60) ![Insertion](https://github.com/user-attachments/assets/3f69aa7c-b1a4-41d5-92d3-6c78f5fd5b3f)
-
+![Impedance](https://github.com/user-attachments/assets/b592316b-ff7c-4275-8e95-2e016dafe89d) ![Insertion](https://github.com/user-attachments/assets/b3fe4e0b-8e2c-4da8-9b55-6f3927566064)
 
 
 The result clearly shows a problem between 10 MHz and 30 MHz. The impedance rises to > 100 Ohm and the insertion loss approaches 4 dB. We attribute this to the length of the air wires between the board and the rocker switch, and the effect of their inductance. It would be advantageous to connect the rocker switch to the board with coaxial wires and also to put the terminating resistor for the unused signal directly on the back of the switch instead of re-routing the unused signal back to the board. Also note the negative insertion loss on the plateau. This is probably due to having replaced the 50 Ohm termination between the transmission and the reference measurement, because it revealed that it did not make contact on the N to SMA adapter. Despite the limitations, the LISN should be good enough for some precompliance testing. We are not sure whether commercial software such as EMCview would accept the calibration files since they are not within the bounds of the CISPR specification.
 
 A remark about the capacitors :
 
-![P4201887](https://github.com/user-attachments/assets/9d48455a-4d09-406e-9be9-14737cf1c724) ![P4201884](https://github.com/user-attachments/assets/e4a14d56-5171-4c1f-8543-a0225ffd19ab)
+![P4201887](https://github.com/user-attachments/assets/a499e0c9-f347-4492-bc00-3b8a900c6ecb) ![P4201884](https://github.com/user-attachments/assets/1999e412-5c96-496b-9183-dd2558593325)
+
 
 Their terminals are located somewhat randomly and a custom footprint with two pads on each side had been made to place them as straight as possible on the board but this was not exactly possible and therefore 2 capacitors are slightly rotated on the prototype. The capacitors are motor capacitors, polyproylene film, type CBB61. If the LISN is operated via a safety isolation transformer, the mains voltage shall be distributed onto the two branches, dividing the voltage by 2, and leave a large safety margin in case the indicated rating is not for permanent use.
 
